@@ -16,7 +16,7 @@ a {
 }
 
 .nav-header a {
-  display: block;
+  float: left;
   color: #fff;
   padding: 15px;
 }
