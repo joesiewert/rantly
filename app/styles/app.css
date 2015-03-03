@@ -7,11 +7,21 @@
 }
 
 html, body {
-  margin: 0px;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.content {
+  padding-left: 15px;
+  clear: both;
+  overflow: hidden;
 }
 
 .nav-header {
@@ -19,8 +29,16 @@ a {
   height: 53px;
 }
 
+.nav-header .nav-header-brand {
+  padding-left: 10px;
+  font-size: 30px;
+}
+
 .nav-header a {
   float: left;
-  color: #fff;
   padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
 }
