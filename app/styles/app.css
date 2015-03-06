@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  width: 100%;
+}
+
 .content {
   padding-left: 15px;
   clear: both;
@@ -41,4 +45,40 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+}
+
+.nav-sidebar {
+  width: 25.333%;
+  float: left;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.nav-search {
+  position: relative;
+  padding: 5px;
+  background-color: #3498DB;
+}
+
+.nav-search-input {
+  padding: 5px 0;
+  color: #34495E;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  text-indent: 7px;
+  background: 0;
+  border-color: transparent;
+  outline: 0;
+}
+
+.nav-search-input::-moz-placeholder {
+  color: #fff;
+}
+
+.nav-search-input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.nav-search-input::-webkit-input-placeholder {
+  color: #fff;
 }
