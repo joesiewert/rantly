@@ -28,8 +28,31 @@ input {
   overflow: hidden;
 }
 
+.button {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 3px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.button-invert {
+  background: #fff;
+  color: #1ABC9C;
+  border-color: #fff;
+}
+
+.button-invert:hover {
+  background: #1ABC9C;
+  color: #fff;
+  border-color: #1ABC9C;
+}
+
 .nav-header {
-  background-color: #34495e;
+  background: #34495e;
   height: 53px;
 }
 
@@ -56,7 +79,7 @@ input {
 .nav-search {
   position: relative;
   padding: 5px;
-  background-color: #3498DB;
+  background: #3498DB;
 }
 
 .nav-search-input {
@@ -81,4 +104,15 @@ input {
 
 .nav-search-input::-webkit-input-placeholder {
   color: #fff;
+}
+
+.nav-header-inner {
+  float: left;
+  background: #3498DB;
+  padding: 7px 15px;
+  width: 74.6687%;
+}
+
+.nav-header-inner .button {
+  float: right;
 }
