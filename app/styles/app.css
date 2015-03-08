@@ -20,6 +20,18 @@ a {
 
 input {
   width: 100%;
+  font-size: 18px;
+  line-height: 1.72222;
+  color: #34495E;
+  border: 2px solid #ECF0F1;
+  border-radius: 3px;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+input:focus {
+  border: 2px solid #1ABC9C;
+  outline: 0;
 }
 
 .content {
@@ -30,6 +42,7 @@ input {
 
 .button {
   padding: 6px 12px;
+  color: #fff;
   font-size: 14px;
   line-height: 1.42857;
   cursor: pointer;
@@ -37,6 +50,22 @@ input {
   border-radius: 3px;
   -webkit-transition: .25s;
   transition: .25s;
+  outline: 0;
+}
+
+.button-block {
+  width: 100%;
+}
+
+.button-primary {
+  background: #1ABC9C;
+  border-color: #1ABC9C;
+}
+
+.button-primary:hover {
+  background: #fff;
+  color: #1ABC9C;
+  border-color: #1ABC9C;
 }
 
 .button-invert {
@@ -49,6 +78,14 @@ input {
   background: #1ABC9C;
   color: #fff;
   border-color: #1ABC9C;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 5px;
 }
 
 .nav-header {
@@ -94,6 +131,10 @@ input {
   outline: 0;
 }
 
+.nav-search-input:focus {
+  border-color: transparent;
+}
+
 .nav-search-input::-moz-placeholder {
   color: #fff;
 }
@@ -104,6 +145,11 @@ input {
 
 .nav-search-input::-webkit-input-placeholder {
   color: #fff;
+}
+
+.login-form {
+  padding: 15px;
+  border-radius: 3px;
 }
 
 .nav-header-inner {
