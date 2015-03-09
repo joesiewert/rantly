@@ -3,7 +3,7 @@
     <a class='nav-header-brand' href='/'>Rantly</a>
     <nav>
       <a href='/'>Rants</a>
-      <a href='/'>Users</a>
+      {{#link-to 'users'}}Users{{/link-to}}
     </nav>
   </div>
 </header>
@@ -26,6 +26,7 @@
   <div class='nav-header-inner'>
     <button class='button button-invert'>New Rant</button>
   </div>
+  <div class='main'>
+    {{outlet}}
+  </div>
 </section>
-
-{{outlet}}
