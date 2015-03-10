@@ -162,3 +162,19 @@ input:focus {
 .nav-header-inner .button {
   float: right;
 }
+
+.main {
+  width: 74.5687%;
+  height: 570px;
+  float: right;
+}
+
+.user {
+  float: left;
+  width: 22.9539%;
+  height: 190px;
+  padding: 15px 15px 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+}
