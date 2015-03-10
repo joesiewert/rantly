@@ -152,6 +152,11 @@ input:focus {
   border-radius: 3px;
 }
 
+.signup-form {
+  padding: 15px;
+  margin: 15px;
+}
+
 .nav-header-inner {
   float: left;
   background: #3498DB;
