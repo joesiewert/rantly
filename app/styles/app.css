@@ -172,6 +172,7 @@ input:focus {
   width: 74.5687%;
   height: 570px;
   float: right;
+  padding: 15px 15px 0;
 }
 
 .user {
@@ -182,4 +183,11 @@ input:focus {
   margin-left: 15px;
   margin-top: 15px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.rant {
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+  border-radius: 3px;
 }
