@@ -192,3 +192,31 @@ input:focus {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
   border-radius: 3px;
 }
+
+.rant-header {
+  margin-bottom: 15px;
+}
+
+.rant-header-title {
+  float: left;
+  width: 60%;
+}
+
+.rant-header-title h3 {
+  font-size: 29px;
+  font-family: Laila, serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #34495E;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rant-header-actions {
+  float: right;
+}
+
+.rant-header-actions .button {
+  float: left;
+  margin-left: 15px;
+}
