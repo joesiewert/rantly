@@ -17,4 +17,17 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.eot', {
+  destDir: 'fonts/glyphicons'
+});
+app.import('bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.svg', {
+  destDir: 'fonts/glyphicons'
+});
+app.import('bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.ttf', {
+  destDir: 'fonts/glyphicons'
+});
+app.import('bower_components/flat-ui/dist/fonts/glyphicons/flat-ui-icons-regular.woff', {
+  destDir: 'fonts/glyphicons'
+});
+
 module.exports = app.toTree();
