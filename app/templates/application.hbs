@@ -1,6 +1,6 @@
 <header class='nav-header' role='navigation'>
   <div class='content'>
-    <a class='nav-header-brand' href='/'>Rantly</a>
+    {{#link-to 'rants' classNames='nav-header-brand'}}Rantly{{/link-to}}
     <nav>
       {{#link-to 'rants'}}Rants{{/link-to}}
       {{#link-to 'users'}}Users{{/link-to}}
@@ -25,7 +25,9 @@
     </form>
   </div>
   <div class='nav-header-inner'>
-    <button class='button button-invert'>New Rant</button>
+    {{#link-to 'rants.new'}}
+      <button class='button button-invert'>New Rant</button>
+    {{/link-to}}
   </div>
   <div class='main'>
     {{outlet}}
