@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -43,7 +43,7 @@ input:focus {
 
 .button {
   padding: 6px 12px;
-  color: #fff;
+  color: #FFF;
   font-size: 14px;
   line-height: 1.42857;
   cursor: pointer;
@@ -64,20 +64,20 @@ input:focus {
 }
 
 .button-primary:hover {
-  background: #fff;
+  background: #FFF;
   color: #1ABC9C;
   border-color: #1ABC9C;
 }
 
 .button-invert {
-  background: #fff;
+  background: #FFF;
   color: #1ABC9C;
-  border-color: #fff;
+  border-color: #FFF;
 }
 
 .button-invert:hover {
   background: #1ABC9C;
-  color: #fff;
+  color: #FFF;
   border-color: #1ABC9C;
 }
 
@@ -91,7 +91,7 @@ input:focus {
 }
 
 .nav-header {
-  background: #34495e;
+  background: #34495E;
   height: 53px;
 }
 
@@ -103,7 +103,7 @@ input:focus {
 .nav-header a {
   float: left;
   padding: 15px;
-  color: #fff;
+  color: #FFF;
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
@@ -139,15 +139,15 @@ input:focus {
 }
 
 .nav-search-input::-moz-placeholder {
-  color: #fff;
+  color: #FFF;
 }
 
 .nav-search-input:-ms-input-placeholder {
-  color: #fff;
+  color: #FFF;
 }
 
 .nav-search-input::-webkit-input-placeholder {
-  color: #fff;
+  color: #FFF;
 }
 
 .input-icon {
@@ -155,7 +155,7 @@ input:focus {
   top: 3px;
   right: 15px;
   font-size: 16px;
-  color: #bfc9ca;
+  color: #BFC9CA;
   line-height: 2.5;
   -webkit-transition: all .25s;
   transition: all .25s;
