@@ -27,3 +27,11 @@
 .fui-new:before {
   content: '\e628';
 }
+
+.fui-upload:before {
+  content: '\e62f';
+}
+
+.fui-exit:before {
+  content: '\e638';
+}
