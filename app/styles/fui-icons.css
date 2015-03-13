@@ -4,8 +4,8 @@
   src: url('../fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), url('../fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), url('../fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
 }
 
-[class^="fui-"],
-[class*="fui-"] {
+[class^='fui-'],
+[class*='fui-'] {
   font-family: 'Flat-UI-Icons';
   speak: none;
   font-style: normal;
@@ -16,6 +16,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fui-user:before {
+  content: '\e631';
+}
+
+.fui-lock:before {
+  content: '\e633';
+}
+
 .fui-new:before {
-  content: "\e628";
+  content: '\e628';
 }

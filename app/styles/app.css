@@ -82,6 +82,7 @@ input:focus {
 }
 
 .form-group {
+  position: relative;
   margin-bottom: 15px;
 }
 
@@ -149,9 +150,24 @@ input:focus {
   color: #fff;
 }
 
+.input-icon {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  font-size: 16px;
+  color: #bfc9ca;
+  line-height: 2.5;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
 .login-form {
   padding: 15px;
   border-radius: 3px;
+}
+
+.login-form input:focus+.input-icon {
+  color: #1ABC9C;
 }
 
 .signup-form {
