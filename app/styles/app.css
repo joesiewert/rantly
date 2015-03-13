@@ -196,6 +196,8 @@ input:focus {
   height: 570px;
   float: right;
   padding: 15px 15px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .user {
