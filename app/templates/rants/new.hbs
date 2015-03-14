@@ -10,7 +10,9 @@
   </header>
   <div class='rant-sidebar'>
     <div class='rant-image'></div>
-    <div>0 Characters</div>
+    <div>
+      {{character-count rantBody.length}}
+    </div>
   </div>
   <div class='rant-content'>
     {{textarea placeholder='Start your rant' value=rantBody}}
