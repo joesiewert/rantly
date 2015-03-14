@@ -23,6 +23,7 @@ a {
 
 input, textarea {
   width: 100%;
+  padding: 10px;
   font-size: 18px;
   line-height: 1.72222;
   color: #34495E;
