@@ -89,6 +89,16 @@ input:focus, textarea:focus {
   border-color: #1ABC9C;
 }
 
+.button-warning {
+  background: #F1C40F;
+  border-color: #F1C40F;
+}
+
+.button-warning:hover {
+  background: #FFF;
+  color: #F1C40F;
+}
+
 .form-group {
   position: relative;
   margin-bottom: 15px;

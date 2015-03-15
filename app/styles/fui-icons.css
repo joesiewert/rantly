@@ -35,3 +35,7 @@
 .fui-exit:before {
   content: '\e638';
 }
+
+.fui-trash:before {
+  content: '\e639';
+}
