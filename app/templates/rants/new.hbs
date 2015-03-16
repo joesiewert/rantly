@@ -5,11 +5,11 @@
     </div>
     <div class='rant-header-actions'>
       <button class='button button-primary fui-upload'> Save</button>
-      <button class='button fui-exit'> Cancel</button>
+      <button {{action 'cancelRant'}} class='button fui-exit'> Cancel</button>
     </div>
   </header>
   <div class='rant-sidebar'>
-    <div class='rant-image'></div>
+    <div class='user-image'></div>
     <div>
       {{character-count rantBody.length}}
     </div>
