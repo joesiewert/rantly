@@ -1,8 +1,9 @@
 <section class='users'>
   {{#each user in model}}
     <div class='user'>
-      {{user.name}}<br>
-      {{user.email}}
+      <div class='user-image'></div>
+      <h5>{{user.name}}</h5>
+      <h6>{{user.email}}</h6>
     </div>
   {{/each}}
 </section>

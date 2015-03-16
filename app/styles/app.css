@@ -285,15 +285,6 @@ input:focus, textarea:focus {
   float: left;
 }
 
-.rant-image {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 15px;
-  color: #34495E;
-  border: 4px dashed;
-  border-radius: 25px 25px 0;
-}
-
 .rant-content {
   width: 79%;
   float: left;
@@ -303,4 +294,31 @@ input:focus, textarea:focus {
 .rant-content textarea {
   height: 414px;
   resize: none;
+}
+
+.user-image {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  color: #34495E;
+  border: 4px dashed;
+  border-radius: 25px 25px 0;
+}
+
+.user h5 {
+  font-size: 16px;
+  font-family: Laila, serif;
+  font-weight: 400;
+  color: #34495E;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+.user h6 {
+  font-size: 13px;
+  font-family: Laila, serif;
+  font-weight: 300;
+  color: #34495E;
+  margin-top: 3px;
+  margin-bottom: 0px;
 }
