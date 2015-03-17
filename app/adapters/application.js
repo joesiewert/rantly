@@ -1,4 +1,6 @@
 import DS from 'ember-data';
+import ENV from '../config/environment';
 
-export default DS.FixtureAdapter.extend({
+export default DS.ActiveModelAdapter.extend({
+  host: ENV.adapterURL
 });

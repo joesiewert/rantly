@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'rantly',
     environment: environment,
     baseURL: '/',
+    adapterURL: process.env.ADAPTER_URL,
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -17,7 +18,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self'",
       'font-src': "'self' fonts.gstatic.com",
-      'connect-src': "'self'",
+      'connect-src': "'self' " + process.env.ADAPTER_URL,
       'img-src': "'self'",
       'style-src': "'self' fonts.googleapis.com",
       'media-src': "'self'"
