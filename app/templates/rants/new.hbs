@@ -4,7 +4,7 @@
       {{input placeholder='Rant Title' value=rantTitle autofocus='true'}}
     </div>
     <div class='rant-header-actions'>
-      <button class='button button-primary fui-upload'> Save</button>
+      <button {{action 'saveRant'}} class='button button-primary fui-upload'> Save</button>
       <button {{action 'cancelRant'}} class='button fui-exit'> Cancel</button>
     </div>
   </header>
