@@ -24,5 +24,12 @@ export default Ember.ObjectController.extend({
       this.set('isEditing', false);
     },
 
+    deleteRant: function(rant) {
+      rant.deleteRecord();
+      rant.save().then(function() {
+        this.transitionToRoute('rants');
+      }.bind(this));
+    }
+
   }
 });

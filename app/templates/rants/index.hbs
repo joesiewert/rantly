@@ -9,7 +9,7 @@
           <div class='rant-header-actions'>
             <button {{action 'saveRant' this}} class='button button-primary fui-upload'> Save</button>
             <button {{action 'cancelRant'}} class='button fui-exit'> Cancel</button>
-            <button class='button button-warning fui-trash'> Delete</button>
+            <button {{action 'deleteRant' this}} class='button button-warning fui-trash'> Delete</button>
           </div>
         </header>
         <div class='rant-sidebar'>
