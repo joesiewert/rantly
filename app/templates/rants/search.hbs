@@ -1,0 +1,44 @@
+<section class='rants'>
+  {{#each itemController='rant'}}
+    {{#if isEditing}}
+      <form class='rant'>
+        <header class='rant-header'>
+          <div class='rant-header-title'>
+            {{input placeholder='Rant Title' value=title autofocus='true'}}
+          </div>
+          <div class='rant-header-actions'>
+            <button {{action 'saveRant' this}} class='button button-primary fui-upload'> Save</button>
+            <button {{action 'cancelRant'}} class='button fui-exit'> Cancel</button>
+            <button {{action 'deleteRant' this}} class='button button-warning fui-trash'> Delete</button>
+          </div>
+        </header>
+        <div class='rant-sidebar'>
+          <div class='user-image'></div>
+          <div>
+            {{character-count body.length}}
+          </div>
+        </div>
+        <div class='rant-content'>
+          {{textarea placeholder='Start your rant' value=body}}
+        </div>
+      </form>
+    {{else}}
+      <div class='rant'>
+        <header class='rant-header'>
+          <div class='rant-header-title'>
+            <h3>{{title}}</h3>
+          </div>
+          <div class='rant-header-actions'>
+            <button {{action 'editRant'}} class='button button-primary fui-new'> Edit</button>
+          </div>
+        </header>
+        <div class='rant-sidebar'>
+          <div class='user-image'></div>
+        </div>
+        <div class='rant-content'>
+          {{body}}
+        </div>
+      </div>
+    {{/if}}
+  {{/each}}
+</section>
