@@ -322,3 +322,15 @@ input:focus, textarea:focus {
   margin-top: 3px;
   margin-bottom: 0px;
 }
+
+.empty-search {
+  text-align: center;
+}
+
+.empty-search h3 {
+  font-size: 29px;
+  font-family: Laila, serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #34495E;
+}
