@@ -6,6 +6,14 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     adapterURL: process.env.ADAPTER_URL,
+    'simple-auth': {
+      authorizer: 'simple-auth-authorizer:devise',
+      routeAfterAuthentication: null
+    },
+    'simple-auth-devise': {
+      identificationAttributeName: 'email',
+      serverTokenEndpoint: process.env.ADAPTER_URL + '/users/sign_in'
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
