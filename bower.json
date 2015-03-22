@@ -13,6 +13,7 @@
     "ember-qunit": "0.2.8",
     "ember-qunit-notifications": "0.0.7",
     "qunit": "~1.17.1",
-    "flat-ui": "~2.2.2"
+    "flat-ui": "~2.2.2",
+    "ember-simple-auth": "0.7.3"
   }
 }
