@@ -16,6 +16,10 @@ export default Ember.Controller.extend({
       });
 
       user.save().then(function() {
+        this.get('session').authenticate('simple-auth-authenticator:devise', {
+          identification: email,
+          password: password
+        });
         this.set('username', '');
         this.set('name', '');
         this.set('email', '');
