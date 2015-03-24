@@ -29,6 +29,11 @@
           <label class='input-icon fui-lock'></label>
         </div>
         <button type='submit' class='button button-block button-primary'>Log In</button>
+        {{#if loginError}}
+          <div class='login-error'>
+            Nope! That email/password is invalid.
+          </div>
+        {{/if}}
       </form>
     {{/if}}
   </div>

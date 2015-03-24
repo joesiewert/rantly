@@ -188,6 +188,10 @@ input:focus, textarea:focus {
   color: #1ABC9C;
 }
 
+.login-error {
+  margin-top: 15px;
+}
+
 .signup-form {
   margin: 15px;
 }
