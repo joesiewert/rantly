@@ -37,12 +37,14 @@
       </form>
     {{/if}}
   </div>
-  <div class='nav-header-inner'>
-    {{#link-to 'rants.new'}}
-      <button class='button button-invert'>New Rant</button>
-    {{/link-to}}
-  </div>
-  <div class='main'>
-    {{outlet}}
+  <div class='main-wrapper'>
+    <div class='nav-header-inner'>
+      {{#link-to 'rants.new'}}
+        <button class='button button-invert'>New Rant</button>
+      {{/link-to}}
+    </div>
+    <div class='main'>
+      {{outlet}}
+    </div>
   </div>
 </section>
