@@ -1,0 +1,7 @@
+{{input placeholder=placeholder value=value type=type focus-out='showErrors'}}
+{{#if icon}}
+  <label class='input-icon fui-lock'></label>
+{{/if}}
+{{#if showError}}
+  <label class='signup-error'>{{errors}}</label>
+{{/if}}

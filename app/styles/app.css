@@ -201,6 +201,11 @@ input:focus, textarea:focus {
   color: #1ABC9C;
 }
 
+.signup-error {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
 .nav-header-inner {
   width: 100%;
   float: left;

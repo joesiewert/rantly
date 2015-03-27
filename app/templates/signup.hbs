@@ -1,16 +1,15 @@
 <form {{action 'createUser' on='submit'}} class='signup-form'>
   <div class='form-group'>
-    {{input placeholder='Username' value=username}}
+    {{validated-input placeholder='Username' value=username type='text' errors=errors.username}}
   </div>
   <div class='form-group'>
-    {{input placeholder='Name' value=name}}
+    {{validated-input placeholder='Name' value=name type='text' errors=errors.name}}
   </div>
   <div class='form-group'>
-    {{input placeholder='Email' value=email}}
+    {{validated-input placeholder='Email' value=email type='text' errors=errors.email}}
   </div>
   <div class='form-group'>
-    {{input placeholder='Password' value=password type='password'}}
-    <label class='input-icon fui-lock'></label>
+    {{validated-input placeholder='Password' value=password type='password' icon=true errors=errors.password}}
   </div>
   <button type='submit' class='button button-block button-primary'>Sign Up</button>
 </form>
