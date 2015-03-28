@@ -317,6 +317,14 @@ input:focus, textarea:focus {
   color: #34495E;
   border: 4px dashed;
   border-radius: 25px 25px 0;
+  overflow: hidden;
+}
+
+.gravatar {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .user h5 {

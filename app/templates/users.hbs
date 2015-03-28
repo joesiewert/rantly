@@ -1,7 +1,9 @@
 <section class='users'>
   {{#each user in model}}
     <div class='user'>
-      <div class='user-image'></div>
+      <div class='user-image'>
+        {{gravatar-image email=user.email class='gravatar'}}
+      </div>
       <h5>{{user.username}}</h5>
       <h6>{{user.name}}</h6>
     </div>
