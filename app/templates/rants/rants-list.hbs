@@ -15,6 +15,9 @@
       <div>
         {{character-count body.length}}
       </div>
+      {{#each error in errorMessages}}
+        <p>{{error}}</p>
+      {{/each}}
     </div>
     <div class='rant-content'>
       {{textarea placeholder='Start your rant' value=body}}
