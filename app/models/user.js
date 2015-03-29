@@ -5,5 +5,9 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   email: DS.attr('string'),
   password: DS.attr('string'),
-  rants: DS.hasMany('rant')
+  rants: DS.hasMany('rant'),
+
+  rantCount: function() {
+    return this.get('rants').length;
+  }.property('rants')
 });
