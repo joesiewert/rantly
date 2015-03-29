@@ -19,9 +19,9 @@ export default Ember.Controller.extend(EmberValidations.Mixin, {
         this.set('errorMessages', []);
         var title = this.get('rantTitle');
         var body = this.get('rantBody');
-        var userId = this.get('session.currentUser.id');
+        var user = this.get('session.currentUser');
 
-        var rant = this.store.createRecord('rant', {title: title, body: body, user_id: userId});
+        var rant = this.store.createRecord('rant', {title: title, body: body, user: user});
         rant.save().then(function() {
           this.set('rantTitle', '');
           this.set('rantBody', '');
