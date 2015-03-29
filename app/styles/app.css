@@ -373,11 +373,11 @@ input:focus, textarea:focus {
   margin-bottom: 0px;
 }
 
-.empty-search {
+.message {
   text-align: center;
 }
 
-.empty-search h3 {
+.message h3 {
   font-size: 29px;
   font-family: Laila, serif;
   font-weight: 700;
