@@ -193,6 +193,33 @@ input:focus, textarea:focus {
   margin-top: 15px;
 }
 
+.login-info {
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.login-image {
+  width: 55%;
+  float: left;
+}
+
+.login-content {
+  width: 45%;
+  float: left;
+  padding-left: 20px;
+}
+
+.login-title {
+  font-size: 22px;
+  font-family: Laila, serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #34495E;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 .signup-form {
   margin: 15px;
 }

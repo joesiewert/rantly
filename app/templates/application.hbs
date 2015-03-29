@@ -15,7 +15,18 @@
       {{input placeholder='Search' value=query action='searchRants' type='search' class='nav-search-input'}}
     </div>
     {{#if session.isAuthenticated}}
-      <div class='login-form'>
+      <div class='login-info'>
+        <div class='login-image'>
+          <div class='user-image'>
+            {{gravatar-image email=session.currentUser.email class='gravatar'}}
+          </div>
+        </div>
+        <div class='login-content'>
+          <div class='login-title'>
+            {{session.currentUser.username}}
+          </div>
+          Rants: {{session.currentUser.rantCount}}
+        </div>
         <button {{action 'invalidateSession'}} class='button button-block button-primary'>Log Out</button>
       </div>
     {{else}}
