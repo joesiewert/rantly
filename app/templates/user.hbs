@@ -1,0 +1,19 @@
+<section class='rants'>
+  {{#each rant in rants}}
+    <div class='rant'>
+      <header class='rant-header'>
+        <div class='rant-header-title'>
+          <h3>{{rant.title}}</h3>
+        </div>
+      </header>
+      <div class='rant-sidebar'>
+        <div class='user-image'>
+          {{gravatar-image email=rant.user.email class='gravatar'}}
+        </div>
+      </div>
+      <div class='rant-content'>
+        {{rant.body}}
+      </div>
+    </div>
+  {{/each}}
+</section>

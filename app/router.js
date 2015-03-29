@@ -11,7 +11,10 @@ Router.map(function() {
     this.route('new');
   });
 
-  this.route('users');
+  this.route('users', function() {
+    this.resource('user', {path: '/:user_id'});
+  });
+
   this.route('signup');
 });
 
