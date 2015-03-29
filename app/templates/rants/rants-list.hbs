@@ -11,7 +11,9 @@
       </div>
     </header>
     <div class='rant-sidebar'>
-      <div class='user-image'></div>
+      <div class='user-image'>
+        {{gravatar-image email=user.email class='gravatar'}}
+      </div>
       <div>
         {{character-count body.length}}
       </div>
@@ -34,7 +36,9 @@
       </div>
     </header>
     <div class='rant-sidebar'>
-      <div class='user-image'></div>
+      <div class='user-image'>
+        {{gravatar-image email=user.email class='gravatar'}}
+      </div>
     </div>
     <div class='rant-content'>
       {{body}}
