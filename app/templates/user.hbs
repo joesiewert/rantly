@@ -1,19 +1,28 @@
 <section class='rants'>
-  {{#each rant in rants}}
-    <div class='rant'>
-      <header class='rant-header'>
-        <div class='rant-header-title'>
-          <h3>{{rant.title}}</h3>
-        </div>
-      </header>
-      <div class='rant-sidebar'>
-        <div class='user-image'>
-          {{gravatar-image email=rant.user.email class='gravatar'}}
-        </div>
-      </div>
-      <div class='rant-content'>
-        {{rant.body}}
-      </div>
+  {{#if rants}}
+    <div class='message'>
+      <h3>Rants for {{username}}</h3>
     </div>
-  {{/each}}
+    {{#each rant in rants}}
+      <div class='rant'>
+        <header class='rant-header'>
+          <div class='rant-header-title'>
+            <h3>{{rant.title}}</h3>
+          </div>
+        </header>
+        <div class='rant-sidebar'>
+          <div class='user-image'>
+            {{gravatar-image email=email class='gravatar'}}
+          </div>
+        </div>
+        <div class='rant-content'>
+          {{rant.body}}
+        </div>
+      </div>
+    {{/each}}
+  {{else}}
+    <div class='message'>
+      <h3>No rants for {{username}} yet.</h3>
+    </div>
+  {{/if}}
 </section>
