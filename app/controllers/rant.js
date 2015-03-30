@@ -14,6 +14,17 @@ export default Ember.ObjectController.extend(EmberValidations.Mixin, {
     }
   },
 
+  isAuthor: function() {
+    var currentUser = this.get('session.currentUser.id');
+    var rantAuthor = this.get('user.id');
+
+    if (currentUser === rantAuthor) {
+      return true;
+    } else {
+      return false;
+    }
+  }.property('session.currentUser', 'user'),
+
   actions: {
     editRant: function() {
       this.set('isEditing', true);
